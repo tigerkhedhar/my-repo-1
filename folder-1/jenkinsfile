@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('stage-1') {
+            steps {
+                git "https://github.com/tigerkhedhar/my-repo-1.git"
+            }
+        }
+        stage('Stage-2'){
+            steps{
+                echo "stage-2"
+            }
+        }
+    }
+}
+
